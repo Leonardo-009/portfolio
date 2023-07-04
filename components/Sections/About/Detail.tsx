@@ -48,11 +48,9 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         Um resumo sobre mim.
       </Heading>
       <Text variant="description">
-        Meu nome é Leonardo Pelanda, tenho 27 anos e possuo uma paixão pela cultura DevOps, DevSecOps e pelas boas práticas de segurança da informação.<br/><br/>
-        Eu irei concluir minha graduação em Análise e Desenvolvimento de Sistemas em 2023. Além disso, possuo uma paixão e entusiasmo pela tecnologia da informação e pela cultura DevOps.<br/><br/>
-        Durante um período de {professionalYears} anos, tenho dedicado meu tempo ao estudo e aprimoramento de um amplo conjunto de tecnologias, pelas quais desenvolvi um profundo apreço.
-        No momento, exerço minha atividade profissional como freelancer nessa área, sempre em busca de novos desafios que me permitam expandir ainda mais minhas habilidades e conhecimentos.
-        <br /> <br />
+        Meu nome é Leonardo Pelanda, tenho 27 anos e sou apaixonado pela cultura DevOps, DevSecOps e boas práticas de segurança da informação.<br/><br/>
+        Estou prestes a concluir minha graduação em Análise e Desenvolvimento de Sistemas em 2023. Além disso, tenho grande entusiasmo e interesse pela tecnologia da informação e pela cultura DevOps.<br/><br/>
+        Ao longo dos últimos {professionalYears} anos,  tenho me dedicado ao estudo e aprimoramento de um amplo conjunto de tecnologias, o que me proporcionou um profundo conhecimento nessa área. Atualmente, trabalho como freelancer, sempre em busca de novos desafios que me permitam expandir ainda mais minhas habilidades e conhecimentos.<br /> <br />
         Vamos explorar algumas das tecnologias com as quais tenho experiência? Então, prepare-se para descobrir algumas das habilidades que possuo. aqui um {' '}
         <Tooltip
           label="Um cafézinho?"
