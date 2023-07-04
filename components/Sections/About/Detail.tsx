@@ -45,7 +45,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           fontVariantCaps: 'small-caps',
         }}
       >
-        Um Resumo sobre eu
+        Um resumo sobre mim.
       </Heading>
       <Text variant="description">
         Meu nome é Leonardo Pelanda, tenho 27 anos e possuo uma paixão pela cultura DevOps, DevSecOps e pelas boas práticas de segurança da informação.<br/><br/>
