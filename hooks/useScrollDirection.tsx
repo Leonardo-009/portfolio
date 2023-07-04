@@ -37,7 +37,7 @@ const useScrollDirection = (
         !isMobileOnly && belowAvatar ? scrollY > avatarScrollY : true
       let currentScrollDirection = ScrollDirection.Initial
 
-      // Used to tell if menu will show or not
+      // Usado para dizer se o menu vai aparecer ou não
       if (scrollY > lastScrollY && isBelowAvatar) {
         currentScrollDirection = ScrollDirection.Down
       } else if (isBelowAvatar && !isMobile) {
@@ -66,7 +66,7 @@ const useScrollDirection = (
       window?.addEventListener('scroll', onScroll)
     }
 
-    // Fallback for initial load
+    // Fallback para carga inicial
     if (!isMobile && !isInitialized && lastScrollY > avatarScrollY) {
       setScrollDir(ScrollDirection.Down)
       setIsInitialized(true)

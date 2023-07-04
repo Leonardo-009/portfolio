@@ -26,7 +26,6 @@ const Avatar = () => {
     AvatarImages.DarkMode
   )
   useEffect(() => {
-    // Some nice preloading and caching
     const images = [AvatarImages.DarkMode, AvatarImages.LightMode]
     const preloadedImages = images.map((imageSrc) => {
       const img = new Image()
