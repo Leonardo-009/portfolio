@@ -1,4 +1,4 @@
-import { IconType } from 'react-icons'
+import { IconType } from 'react-icons';
 import {
   SiJavascript,
   SiTypescript,
@@ -19,25 +19,24 @@ import {
   SiAmazonaws,
   SiKalilinux,
   SiPython,
-} from 'react-icons/si'
-import {AiFillGithub} from 'react-icons/ai'
-import {DiUbuntu} from 'react-icons/di'
+} from 'react-icons/si';
+import { AiFillGithub } from 'react-icons/ai';
+import { DiUbuntu } from 'react-icons/di';
 
-DiUbuntu
-export type SkillCategory  =
+export type SkillCategory =
   | 'SegurançaDaInformação'
   | 'CyberSecurity'
   | 'database'
   | 'Developer'
-  | 'DevOps'
+  | 'DevOps';
 
 export type Skill = {
-  name: string
-  icon: IconType
-}
+  name: string;
+  icon?: IconType | null; // Make the icon property optional and allow null
+};
 
 export const Skills: {
-  [key in SkillCategory]: Skill[]
+  [key in SkillCategory]: Skill[];
 } = {
   SegurançaDaInformação: [
     {
@@ -84,7 +83,7 @@ export const Skills: {
     },
     {
       name: 'React',
-      icon:  SiReact,
+      icon: SiReact,
     },
     {
       name: 'NodeJS',
@@ -135,28 +134,29 @@ export const Skills: {
       name: 'Amazon AWS',
       icon: SiAmazonaws,
     },
-    { name: "Python",
+    {
+      name: "Python",
       icon: SiPython,
-  },
+    },
   ],
-}
+};
 
 export const splitSkills = (srcArray: Skill[]) => {
-  const arrLength = srcArray.length
-  const isEvenChunk = arrLength % 2 === 0
+  const arrLength = srcArray.length;
+  const isEvenChunk = arrLength % 2 === 0;
 
-  let chunk = 4
+  let chunk = 4;
   if (isEvenChunk) {
-    chunk = arrLength / 2
+    chunk = arrLength / 2;
   } else if (arrLength <= 5 && arrLength > 2) {
-    chunk = 3
+    chunk = 3;
   }
 
-  let i = 0
-  let j = 0
-  const temporary = []
+  let i = 0;
+  let j = 0;
+  const temporary = [];
   for (i = 0, j = srcArray.length; i < j; i += chunk) {
-    temporary.push(srcArray.slice(i, i + chunk))
+    temporary.push(srcArray.slice(i, i + chunk));
   }
-  return temporary
-}
+  return temporary;
+};

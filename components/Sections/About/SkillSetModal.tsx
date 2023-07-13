@@ -46,7 +46,7 @@ const SkillList = ({
               display="flex"
               alignItems="center"
             >
-              <ListIcon as={item.icon} color={emphasis} fontSize="2em" />
+              <ListIcon as={item.icon as React.ElementType} color={emphasis} fontSize="2em" />
               {item.name}
             </ListItem>
           ))}
@@ -59,7 +59,7 @@ const SkillList = ({
               display="flex"
               alignItems="center"
             >
-              <ListIcon as={item.icon} color={emphasis} fontSize="2em" />
+              <ListIcon as={item.icon as React.ElementType} color={emphasis} fontSize="2em" />
               {item.name}
             </ListItem>
           ))}
