@@ -4,22 +4,12 @@ import {
   Text,
   List,
   ListItem,
-  ListIcon,
   Icon,
   SimpleGrid,
   Box,
   Tooltip,
   Stack,
-  useColorModeValue,
 } from '@chakra-ui/react'
-import {
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiDocker,
-} from 'react-icons/si'
 import { IoMdOpen, IoIosCafe } from 'react-icons/io'
 
 type ISkillSetModal = {
@@ -27,7 +17,6 @@ type ISkillSetModal = {
 }
 
 const Detail = ({ onOpen }: ISkillSetModal) => {
-  const emphasis = useColorModeValue('teal.500', 'cyan.200')
   const currentYear = new Date().getFullYear()
   const professionalYears = currentYear - 2021
 
