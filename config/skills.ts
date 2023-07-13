@@ -16,19 +16,20 @@ import {
   SiMicrosoft,
   SiChakraui,
   SiTerraform,
-  SiAmazonaws
+  SiAmazonaws,
+  SiKalilinux,
+  SiPython,
 } from 'react-icons/si'
-import {FaLinux, } from 'react-icons/fa'
 import {AiFillGithub} from 'react-icons/ai'
+import {DiUbuntu} from 'react-icons/di'
+
+DiUbuntu
 export type SkillCategory  =
-  | 'backend'
-  | 'frontend'
-  | 'cicd'
+  | 'SegurançaDaInformação'
+  | 'CyberSecurity'
   | 'database'
-  | 'ui frameworks'
-  | 'productivity boost'
-  | 'desktop'
-  | 'cloud'
+  | 'Developer'
+  | 'DevOps'
 
 export type Skill = {
   name: string
@@ -38,34 +39,63 @@ export type Skill = {
 export const Skills: {
   [key in SkillCategory]: Skill[]
 } = {
-  backend: [
+  SegurançaDaInformação: [
     {
-      name: 'Node',
-      icon: SiNodedotjs,
+      name: 'ISO 27001',
+    },
+    {
+      name: 'LGPD',
+    },
+  ],
+  CyberSecurity: [
+    {
+      name: 'OWSP',
+    },
+    {
+      name: 'Firewall',
+    },
+    {
+      name: 'Antivírus',
+    },
+    {
+      name: "Kali Linux",
+      icon: SiKalilinux,
+    },
+    {
+      name: "Pentest",
+    },
+    {
+      name: "Hacker Ético",
+    },
+  ],
+
+  Developer: [
+    {
+      name: 'TypeScript',
+      icon: SiTypescript,
     },
     {
       name: 'JavaScript',
       icon: SiJavascript,
     },
     {
-      name: 'TypeScript',
-      icon: SiTypescript,
-    },
-  ],
-  frontend: [
-    {
-      name: 'React',
-      icon: SiReact,
-    },
-    {
       name: 'NextJS',
       icon: SiNextdotjs,
     },
     {
-      name: 'VueJS',
-      icon: SiVuedotjs,
+      name: 'React',
+      icon:  SiReact,
+    },
+    {
+      name: 'NodeJS',
+      icon: SiNodedotjs,
+    },
+    {
+      name: 'Visual Studio Code',
+      icon: SiVisualstudiocode,
     },
   ],
+
   database: [
     {
       name: 'PostgreSQL',
@@ -76,7 +106,7 @@ export const Skills: {
       icon: SiMysql,
     },
   ],
-  cicd: [
+  DevOps: [
     {
       name: 'Docker',
       icon: SiDocker,
@@ -89,22 +119,6 @@ export const Skills: {
       name: 'Terraform',
       icon: SiTerraform,
     },
-  ],
-  'ui frameworks': [
-    {
-      name: 'Styled Components',
-      icon: SiStyledcomponents,
-    },
-    {
-      name: 'ChakraUI',
-      icon: SiChakraui,
-    },
-  ],
-  'productivity boost': [
-    {
-      name: 'VSCode',
-      icon: SiVisualstudiocode,
-    },
     {
       name: 'Git',
       icon: SiGit,
@@ -113,23 +127,17 @@ export const Skills: {
       name: 'Github',
       icon: AiFillGithub,
     },
-  ],
-  desktop: [
     {
-      name: 'Windows',
-      icon: SiMicrosoft,
+      name: "Ubuntu",
+      icon: DiUbuntu,
     },
-    {
-      name: 'Linux',
-      icon: FaLinux,
-    },
-  ],
-  cloud: [
     {
       name: 'Amazon AWS',
       icon: SiAmazonaws,
     },
-
+    { name: "Python",
+      icon: SiPython,
+  },
   ],
 }
 

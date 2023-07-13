@@ -69,14 +69,11 @@ const SkillList = ({
   )
 }
 const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
-  const backendCols = splitSkills(Skills.backend)
-  const frontendCols = splitSkills(Skills.frontend)
-  const cicdCols = splitSkills(Skills.cicd)
+  const SegurançaDaInformação = splitSkills(Skills.SegurançaDaInformação)
+  const CyberSecurity = splitSkills(Skills.CyberSecurity)
+  const DevOps = splitSkills(Skills.DevOps)
   const dataBaseCols = splitSkills(Skills.database)
-  const uiFrameWorkCols = splitSkills(Skills['ui frameworks'])
-  const productivityCols = splitSkills(Skills['productivity boost'])
-  const cloudCols = splitSkills(Skills['cloud'])
-  const desktopCols = splitSkills(Skills.desktop)
+  const Developer  = splitSkills(Skills.Developer )
   return (
     <Modal
       isOpen={isOpen}
@@ -89,14 +86,11 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
         <ModalHeader>Conjunto De Habilidades</ModalHeader>
         <ModalCloseButton />
         <ModalBody className={styles.skillModal} >
-          <SkillList title="Back End" columns={backendCols} />
-          <SkillList title="Front End" columns={frontendCols} />
-          <SkillList title=" Cloud" columns={cloudCols} />
-          <SkillList title="Pipiline CI/CD" columns={cicdCols} />
+          <SkillList title="Segurança da informação" columns={SegurançaDaInformação} />
+          <SkillList title="CyberSecurity" columns={CyberSecurity} />
+          <SkillList title="DevOps" columns={DevOps} />
+          <SkillList title="Developer " columns={Developer } />
           <SkillList title="Banco de dados" columns={dataBaseCols} />
-          <SkillList title="Ui Frameworks" columns={uiFrameWorkCols} />
-          <SkillList title="Sistemas Operacionais" columns={desktopCols} />
-          <SkillList title="Produtividade" columns={productivityCols} />
         </ModalBody>
       </ModalContent>
     </Modal>

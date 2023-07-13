@@ -103,7 +103,7 @@ const Sidebar = () => {
             variants={fadeInUp}
             color="#45aaf2"
           >
-            Apaixonado por tecnologia da informação.
+            Apaixonado por Segurança da Informação.
           </MotionHeading>
 
           <MotionText
@@ -118,7 +118,7 @@ const Sidebar = () => {
               {' '}
               Obrigado!
             </Text>
-            <br />Sou programador com habilidades em backend e front-end. Recentemente, tenho estudado Amazon AWS.
+            <br />Sou um Analista de Segurança da Informação com Conhecimento em Pentest e Hacker Ético.
           </MotionText>
           <MotionButton
             size="lg"

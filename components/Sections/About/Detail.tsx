@@ -49,8 +49,8 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       </Heading>
       <Text variant="description">
         Meu nome é Leonardo Pelanda, tenho 27 anos e sou apaixonado pela cultura DevOps, DevSecOps e boas práticas de segurança da informação.<br/><br/>
-        Estou prestes a concluir minha graduação em Análise e Desenvolvimento de Sistemas em 2023. Além disso, tenho grande entusiasmo e interesse pela tecnologia da informação e pela cultura DevOps.<br/><br/>
-        Ao longo dos últimos {professionalYears} anos,  tenho me dedicado ao estudo e aprimoramento de um amplo conjunto de tecnologias, o que me proporcionou um profundo conhecimento nessa área. Atualmente, trabalho como freelancer, sempre em busca de novos desafios que me permitam expandir ainda mais minhas habilidades e conhecimentos.<br /> <br />
+        Estou prestes a concluir minha graduação em Análise e Desenvolvimento de Sistemas em 2023. Além disso, tenho grande entusiasmo e interesse pela Segurança da informação e Cyber Security.<br/><br/>
+        Ao longo dos últimos {professionalYears} anos,  tenho me dedicado ao estudo e aprimoramento de um amplo conjunto de tecnologias, o que me proporcionou um profundo conhecimento nessa área. Atualmente, atuando como um freelancer, sempre em busca de novos desafios que me permitam expandir ainda mais minhas habilidades e conhecimentos.<br /> <br />
         Vamos explorar algumas das tecnologias com as quais tenho experiência? Então, prepare-se para descobrir algumas das habilidades que possuo. aqui um {' '}
         <Tooltip
           label="Um cafézinho?"
@@ -67,30 +67,30 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       <SimpleGrid columns={2} spacing={4} >
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
-            JavaScript
+            {/* <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" /> */}
+            ISO 27001
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
-            TypeScript
+            {/* <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" /> */}
+            LGPD
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNodedotjs} color={emphasis} fontSize="2em" />
-            Node
+            {/* <ListIcon as={SiNodedotjs} color={emphasis} fontSize="2em" /> */}
+            segurança da informação
           </ListItem>
         </List>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
-            React
+            {/* <ListIcon as={SiReact} color={emphasis} fontSize="2em" /> */}
+            Pentest
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextdotjs} color={emphasis} fontSize="2em" />
-            NextJS
+            {/* <ListIcon as={SiNextdotjs} color={emphasis} fontSize="2em" /> */}
+            Hacker Ético
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDocker} color={emphasis} fontSize="2em" />
-            Docker
+            {/* <ListIcon as={SiDocker} color={emphasis} fontSize="2em" /> */}
+            DevSecOps
           </ListItem>
         </List>
         <Box>
