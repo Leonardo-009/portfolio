@@ -48,12 +48,37 @@ const GetInTouch = () => {
             ref={ref}
             animate={inView ? ['shake', 'jump'] : false}
           >
-            (•̀ᴗ•́)و💻 (•̀ᴗ•́)و⚔️ (•̀ᴗ•́)و🔒 (•̀ᴗ•́)و🔎
+            (•̀ᴗ•́)و💻
+          </motion.div>
+          <motion.div
+            style={{ display: 'inline-block' }}
+            variants={rimuruVariant}
+            ref={ref}
+            animate={inView ? ['shake', 'jump'] : false}
+          >
+            (•̀ᴗ•́)و⚔️
+          </motion.div>
+          <motion.div
+            style={{ display: 'inline-block' }}
+            variants={rimuruVariant}
+            ref={ref}
+            animate={inView ? ['shake', 'jump'] : false}
+          >
+            (•̀ᴗ•́)و🔒
+          </motion.div>
+          <motion.div
+            style={{ display: 'inline-block' }}
+            variants={rimuruVariant}
+            ref={ref}
+            animate={inView ? ['shake', 'jump'] : false}
+          >
+            (•̀ᴗ•́)و🔎
           </motion.div>
         </Text>
       </Heading>
       <Text variant="description">
-        Sou um Hacker Ético com uma paixão pela Segurança da Informação e com uma personalidade naturalmente introvertida. No entanto, não deixe isso te enganar! Estou mais do que animado para me envolver em conversas significativas e responder às suas mensagens.<br /><br />
+        Sou um paixonado pela Segurança da Informação e com uma personalidade naturalmente introvertida.
+        No entanto, não deixe isso te enganar! Estou mais do que animado para me envolver em conversas significativas e responder às suas mensagens.<br /><br />
         Seja qual for a sua necessidade - seja um projeto de programação, suporte técnico, consultoria ou até mesmo uma conversa descontraída sobre filmes, cultura otaku ou qualquer assunto interessante - estou aqui para ajudar.<br /><br />
         Fique à vontade para entrar em contato comigo através das minhas redes sociais ou por qualquer meio de comunicação de sua preferência.
         Estou ansioso para trocar ideias, compartilhar conhecimento e colaborar com sua Segurança!<br />

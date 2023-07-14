@@ -118,7 +118,7 @@ const Sidebar = () => {
               {' '}
               Obrigado!
             </Text>
-            <br />Sou um Analista de Segurança da Informação com Conhecimento em Pentest e Hacker Ético.
+            <br />Estou em buscar de novas áreas na TI!
           </MotionText>
           <MotionButton
             size="lg"

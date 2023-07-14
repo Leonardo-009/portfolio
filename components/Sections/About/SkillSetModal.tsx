@@ -70,7 +70,7 @@ const SkillList = ({
 }
 const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
   const SegurançaDaInformação = splitSkills(Skills.SegurançaDaInformação)
-  const CyberSecurity = splitSkills(Skills.CyberSecurity)
+  const cloud = splitSkills(Skills.cloud)
   const DevOps = splitSkills(Skills.DevOps)
   const dataBaseCols = splitSkills(Skills.database)
   const Developer  = splitSkills(Skills.Developer )
@@ -87,9 +87,9 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
         <ModalCloseButton />
         <ModalBody className={styles.skillModal} >
           <SkillList title="Segurança da informação" columns={SegurançaDaInformação} />
-          <SkillList title="CyberSecurity" columns={CyberSecurity} />
-          <SkillList title="DevOps" columns={DevOps} />
           <SkillList title="Developer " columns={Developer } />
+          <SkillList title="DevOps" columns={DevOps} />
+          <SkillList title="cloud" columns={cloud} />
           <SkillList title="Banco de dados" columns={dataBaseCols} />
         </ModalBody>
       </ModalContent>

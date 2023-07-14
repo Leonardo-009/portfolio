@@ -5,30 +5,28 @@ import {
   SiNodedotjs,
   SiReact,
   SiNextdotjs,
-  SiStyledcomponents,
-  SiVuedotjs,
   SiDocker,
   SiKubernetes,
   SiPostgresql,
   SiMysql,
   SiGit,
   SiVisualstudiocode,
-  SiMicrosoft,
-  SiChakraui,
-  SiTerraform,
   SiAmazonaws,
-  SiKalilinux,
+  SiAwslambda,
   SiPython,
+  SiAmazonec2,
 } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
 import { DiUbuntu } from 'react-icons/di';
 
+
+
 export type SkillCategory =
   | 'SegurançaDaInformação'
-  | 'CyberSecurity'
   | 'database'
   | 'Developer'
-  | 'DevOps';
+  | 'DevOps'
+  | 'cloud';
 
 export type Skill = {
   name: string;
@@ -46,27 +44,6 @@ export const Skills: {
       name: 'LGPD',
     },
   ],
-  CyberSecurity: [
-    {
-      name: 'OWSP',
-    },
-    {
-      name: 'Firewall',
-    },
-    {
-      name: 'Antivírus',
-    },
-    {
-      name: "Kali Linux",
-      icon: SiKalilinux,
-    },
-    {
-      name: "Pentest",
-    },
-    {
-      name: "Hacker Ético",
-    },
-  ],
 
   Developer: [
     {
@@ -76,6 +53,10 @@ export const Skills: {
     {
       name: 'JavaScript',
       icon: SiJavascript,
+    },
+    {
+      name: "Python",
+      icon: SiPython,
     },
     {
       name: 'NextJS',
@@ -115,10 +96,6 @@ export const Skills: {
       icon: SiKubernetes,
     },
     {
-      name: 'Terraform',
-      icon: SiTerraform,
-    },
-    {
       name: 'Git',
       icon: SiGit,
     },
@@ -130,13 +107,19 @@ export const Skills: {
       name: "Ubuntu",
       icon: DiUbuntu,
     },
+  ],
+  cloud: [
     {
       name: 'Amazon AWS',
       icon: SiAmazonaws,
     },
     {
-      name: "Python",
-      icon: SiPython,
+      name: 'Lambda',
+      icon: SiAwslambda,
+    },
+    {
+      name: 'EC2',
+      icon: SiAmazonec2,
     },
   ],
 };
