@@ -1,13 +1,8 @@
 import { IconType } from 'react-icons';
 import {
-  SiJavascript,
   SiTypescript,
-  SiNodedotjs,
   SiReact,
-  SiNextdotjs,
   SiDocker,
-  SiKubernetes,
-  SiPostgresql,
   SiMysql,
   SiGit,
   SiVisualstudiocode,
@@ -19,7 +14,7 @@ import {
   SiSpring,
 } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
-import { FaAngular, FaJava, FaLinux } from 'react-icons/fa';
+import { FaAngular, FaJava, FaLinux, FaNode } from 'react-icons/fa';
 
 
 export type SkillCategory =
@@ -63,8 +58,8 @@ export const Skills: {
       icon: SiPython,
     },
     {
-      name: 'NodeJS',
-      icon: SiNodedotjs,
+      name: 'Node',
+      icon: FaNode,
     },
     {
       name: 'Spring Boot',
