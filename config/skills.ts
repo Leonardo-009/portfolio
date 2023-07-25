@@ -65,10 +65,6 @@ export const Skills: {
       name: 'Spring Boot',
       icon: SiSpring,
     },
-    {
-      name: 'Visual Studio Code',
-      icon: SiVisualstudiocode,
-    },
   ],
 
   database: [
