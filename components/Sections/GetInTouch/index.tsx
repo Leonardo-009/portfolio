@@ -77,11 +77,11 @@ const GetInTouch = () => {
         </Text>
       </Heading>
       <Text variant="description">
-        Sou um paixonado pela Segurança da Informação e com uma personalidade naturalmente introvertida.
+        Sou um paixonado pela tecnologia da informação e com uma personalidade naturalmente introvertida.
         No entanto, não deixe isso te enganar! Estou mais do que animado para me envolver em conversas significativas e responder às suas mensagens.<br /><br />
         Seja qual for a sua necessidade - seja um projeto de programação, suporte técnico, consultoria ou até mesmo uma conversa descontraída sobre filmes, cultura otaku ou qualquer assunto interessante - estou aqui para ajudar.<br /><br />
         Fique à vontade para entrar em contato comigo através das minhas redes sociais ou por qualquer meio de comunicação de sua preferência.
-        Estou ansioso para trocar ideias, compartilhar conhecimento e colaborar com sua Segurança!<br />
+        Estou ansioso para trocar ideias, compartilhar conhecimento e colaborar com sua jornada!<br />
 
         <Link
           href="mailto:leonardoapelanda@gmail.com"

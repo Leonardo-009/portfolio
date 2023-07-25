@@ -10,8 +10,9 @@ import {
   Tooltip,
   Stack,
 } from '@chakra-ui/react'
-import { SiJavascript, SiTypescript, SiNodedotjs, SiReact, SiNextdotjs, SiPython } from 'react-icons/si'
+import { SiSpring, SiTypescript, SiNodedotjs, SiReact, SiNextdotjs, SiPython } from 'react-icons/si'
 import { IoMdOpen, IoIosCafe } from 'react-icons/io'
+import { FaJava } from 'react-icons/fa'
 import { ListIcon } from '@chakra-ui/react'
 
 type ISkillSetModal = {
@@ -39,17 +40,17 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         Um resumo sobre mim.
       </Heading>
       <Text variant="description">
-        Meu nome é Leonardo Pelanda, tenho 27 anos e sou apaixonado pela cultura DevOps, DevSecOps e Segurança da informação.<br/><br/>
-        Estou prestes a concluir minha graduação em Análise e Desenvolvimento de Sistemas em 2023, Além disso comecei uma nova jornada em Sistemas de Informação. Tenho grande entusiasmo e interesse pela Segurança da informação.<br/><br/>
+        Meu nome é Leonardo Pelanda, tenho 27 anos e sou apaixonado pela tecnologia da informação e cultura DevOps.<br/><br/>
+        Estou prestes a concluir minha graduação em Análise e Desenvolvimento de Sistemas em 2023, Além disso comecei uma nova jornada em Sistemas de Informação. Tenho grande entusiasmo e interesse pela Tecnologia da Informação.<br/><br/>
         Ao longo dos últimos {professionalYears} anos,  tenho me dedicado ao estudo e aprimoramento de um amplo conjunto de tecnologias, o que me proporcionou um profundo conhecimento na área de desevolvimento. Atualmente, tenho buscado uma oportunidade de crescimento na área de TI e estou sempre em busca de novos desafios que me permitam expandir ainda mais minhas habilidades e conhecimentos.<br /> <br />
-        Vamos explorar algumas das tecnologias com as quais tenho experiência? Então, prepare-se para descobrir algumas das habilidades minhas, voce gostaria de um {' '}
+        Vamos explorar algumas das tecnologias com as quais tenho experiência? Então, prepare-se para descobrir algumas das minhas habilidades, você gostaria de um {' '}
         <Tooltip
           label="Um cafézinho?"
           aria-label="Eu Amo Café!"
           hasArrow
         >
           <Text as="span" variant="emphasis" color="#45aaf2">
-            Café
+            Café?
           </Text>
         </Tooltip>{' '}
         <Icon as={IoIosCafe} />.
@@ -58,8 +59,8 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       <SimpleGrid columns={2} spacing={4} >
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiJavascript} color="blue.500" fontSize="2em" />
-            JavaScript
+            <ListIcon as={FaJava} color="blue.500" fontSize="2em" />
+            Java
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiTypescript} color="blue.500" fontSize="2em" />
@@ -76,8 +77,8 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             React
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextdotjs} color="blue.500" fontSize="2em" />
-            NextJS
+            <ListIcon as={SiSpring} color="blue.500" fontSize="2em" />
+            Spring Boot
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiNodedotjs} color="blue.500" fontSize="2em" />

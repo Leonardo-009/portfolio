@@ -69,11 +69,11 @@ const SkillList = ({
   )
 }
 const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
-  const SegurançaDaInformação = splitSkills(Skills.SegurançaDaInformação)
+  const FrontEnd = splitSkills(Skills.FrontEnd)
   const cloud = splitSkills(Skills.cloud)
-  const DevOps = splitSkills(Skills.DevOps)
+  const BackEnd = splitSkills(Skills.BackEnd)
   const dataBaseCols = splitSkills(Skills.database)
-  const Developer  = splitSkills(Skills.Developer )
+  const Conhecimento  = splitSkills(Skills.Conhecimento )
   return (
     <Modal
       isOpen={isOpen}
@@ -86,11 +86,11 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
         <ModalHeader>Conjunto De Habilidades</ModalHeader>
         <ModalCloseButton />
         <ModalBody className={styles.skillModal} >
-          <SkillList title="Segurança da informação" columns={SegurançaDaInformação} />
-          <SkillList title="Developer " columns={Developer } />
-          <SkillList title="DevOps" columns={DevOps} />
-          <SkillList title="cloud" columns={cloud} />
+          <SkillList title="Front End" columns={FrontEnd} />
+          <SkillList title="Back End" columns={BackEnd} />
           <SkillList title="Banco de dados" columns={dataBaseCols} />
+          <SkillList title="cloud" columns={cloud} />
+          <SkillList title="Conhecimento " columns={Conhecimento } />
         </ModalBody>
       </ModalContent>
     </Modal>

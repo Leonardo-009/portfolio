@@ -103,7 +103,7 @@ const Sidebar = () => {
             variants={fadeInUp}
             color="#45aaf2"
           >
-            Apaixonado por Segurança da Informação.
+            Apaixonado por Sistema de informação.
           </MotionHeading>
 
           <MotionText

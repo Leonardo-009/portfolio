@@ -15,18 +15,20 @@ import {
   SiAwslambda,
   SiPython,
   SiAmazonec2,
+  SiMongodb,
+  SiSpring,
 } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
-import { DiUbuntu } from 'react-icons/di';
-
+import { FaAngular, FaJava, FaLinux } from 'react-icons/fa';
 
 
 export type SkillCategory =
-  | 'SegurançaDaInformação'
+  | 'FrontEnd'
   | 'database'
-  | 'Developer'
-  | 'DevOps'
-  | 'cloud';
+  | 'BackEnd'
+  | 'cloud'
+  | 'Conhecimento';
+
 
 export type Skill = {
   name: string;
@@ -36,39 +38,37 @@ export type Skill = {
 export const Skills: {
   [key in SkillCategory]: Skill[];
 } = {
-  SegurançaDaInformação: [
+  FrontEnd: [
     {
-      name: 'ISO 27001',
-    },
-    {
-      name: 'LGPD',
-    },
-  ],
-
-  Developer: [
-    {
-      name: 'TypeScript',
-      icon: SiTypescript,
-    },
-    {
-      name: 'JavaScript',
-      icon: SiJavascript,
-    },
-    {
-      name: "Python",
-      icon: SiPython,
-    },
-    {
-      name: 'NextJS',
-      icon: SiNextdotjs,
+      name: 'Angular',
+      icon: FaAngular,
     },
     {
       name: 'React',
       icon: SiReact,
     },
     {
+      name: 'Typescript',
+      icon: SiTypescript,
+    }
+  ],
+
+  BackEnd: [
+    {
+      name: "Java",
+      icon: FaJava,
+    },
+    {
+      name: "Python",
+      icon: SiPython,
+    },
+    {
       name: 'NodeJS',
       icon: SiNodedotjs,
+    },
+    {
+      name: 'Spring Boot',
+      icon: SiSpring,
     },
     {
       name: 'Visual Studio Code',
@@ -78,22 +78,18 @@ export const Skills: {
 
   database: [
     {
-      name: 'PostgreSQL',
-      icon: SiPostgresql,
+      name: 'Mongodb',
+      icon: SiMongodb,
     },
     {
       name: 'MySQL',
       icon: SiMysql,
     },
   ],
-  DevOps: [
+  Conhecimento: [
     {
-      name: 'Docker',
-      icon: SiDocker,
-    },
-    {
-      name: 'Kubernetes',
-      icon: SiKubernetes,
+      name: 'Visual Studio Code',
+      icon: SiVisualstudiocode,
     },
     {
       name: 'Git',
@@ -104,8 +100,12 @@ export const Skills: {
       icon: AiFillGithub,
     },
     {
-      name: "Ubuntu",
-      icon: DiUbuntu,
+      name: 'Docker',
+      icon: SiDocker,
+    },
+    {
+      name: "Linux",
+      icon: FaLinux,
     },
   ],
   cloud: [
