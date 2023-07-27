@@ -10,9 +10,9 @@ import {
   Tooltip,
   Stack,
 } from '@chakra-ui/react'
-import { SiDocker, SiTypescript, SiReact, SiPython,SiJavascript } from 'react-icons/si'
+import { SiDocker, SiReact, SiSpring, SiJavascript } from 'react-icons/si'
 import { IoMdOpen, IoIosCafe } from 'react-icons/io'
-import { FaNode } from 'react-icons/fa'
+import { FaNode, FaJava } from 'react-icons/fa'
 import { ListIcon } from '@chakra-ui/react'
 
 type ISkillSetModal = {
@@ -63,12 +63,12 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             Javascript
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiTypescript} color="blue.500" fontSize="2em" />
-            TypeScript
+            <ListIcon as={FaJava} color="blue.500" fontSize="2em" />
+            Java
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiPython} color="blue.500" fontSize="2em" />
-            Python
+            <ListIcon as={SiSpring} color="blue.500" fontSize="2em" />
+            Spring Boot
           </ListItem>
         </List>
         <List spacing={3}>

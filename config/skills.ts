@@ -1,6 +1,5 @@
 import { IconType } from 'react-icons';
 import {
-  SiTypescript,
   SiReact,
   SiDocker,
   SiMysql,
@@ -12,9 +11,10 @@ import {
   SiAmazonec2,
   SiMongodb,
   SiJavascript,
+  SiSpring,
 } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
-import { FaAngular, FaLinux, FaNode } from 'react-icons/fa';
+import { FaAngular, FaLinux, FaNode, FaJava} from 'react-icons/fa';
 
 
 export type SkillCategory =
@@ -43,19 +43,20 @@ export const Skills: {
       icon: SiReact,
     },
     {
-      name: 'Typescript',
-      icon: SiTypescript,
-    }
+      name: "Javascript",
+      icon: SiJavascript,
+    },
   ],
 
   BackEnd: [
     {
-      name: "Javascript",
-      icon: SiJavascript,
+      name: "Java",
+      icon: FaJava,
     },
+
     {
-      name: "Python",
-      icon: SiPython,
+      name: "Spring Boot",
+      icon: SiSpring,
     },
     {
       name: 'Node',
