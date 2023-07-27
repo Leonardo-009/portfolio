@@ -11,7 +11,6 @@ import {
   SiPython,
   SiAmazonec2,
   SiMongodb,
-  SiSpring,
   SiJavascript,
 } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
