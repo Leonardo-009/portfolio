@@ -12,9 +12,10 @@ import {
   SiAmazonec2,
   SiMongodb,
   SiSpring,
+  SiJavascript,
 } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
-import { FaAngular, FaJava, FaLinux, FaNode } from 'react-icons/fa';
+import { FaAngular, FaLinux, FaNode } from 'react-icons/fa';
 
 
 export type SkillCategory =
@@ -50,8 +51,8 @@ export const Skills: {
 
   BackEnd: [
     {
-      name: "Java",
-      icon: FaJava,
+      name: "Javascript",
+      icon: SiJavascript,
     },
     {
       name: "Python",
@@ -60,10 +61,6 @@ export const Skills: {
     {
       name: 'Node',
       icon: FaNode,
-    },
-    {
-      name: 'Spring Boot',
-      icon: SiSpring,
     },
   ],
 

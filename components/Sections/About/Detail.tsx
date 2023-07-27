@@ -10,9 +10,9 @@ import {
   Tooltip,
   Stack,
 } from '@chakra-ui/react'
-import { SiSpring, SiTypescript, SiReact, SiPython } from 'react-icons/si'
+import { SiDocker, SiTypescript, SiReact, SiPython,SiJavascript } from 'react-icons/si'
 import { IoMdOpen, IoIosCafe } from 'react-icons/io'
-import { FaJava, FaNode } from 'react-icons/fa'
+import { FaNode } from 'react-icons/fa'
 import { ListIcon } from '@chakra-ui/react'
 
 type ISkillSetModal = {
@@ -59,8 +59,8 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       <SimpleGrid columns={2} spacing={4} >
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={FaJava} color="blue.500" fontSize="2em" />
-            Java
+            <ListIcon as={SiJavascript} color="blue.500" fontSize="2em" />
+            Javascript
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiTypescript} color="blue.500" fontSize="2em" />
@@ -77,8 +77,8 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             React
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiSpring} color="blue.500" fontSize="2em" />
-            Spring Boot
+            <ListIcon as={SiDocker} color="blue.500" fontSize="2em" />
+            Docker
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={FaNode} color="blue.500" fontSize="2em" />
