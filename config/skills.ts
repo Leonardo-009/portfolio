@@ -7,7 +7,6 @@ import {
   SiVisualstudiocode,
   SiAmazonaws,
   SiAwslambda,
-  SiPython,
   SiAmazonec2,
   SiMongodb,
   SiJavascript,
@@ -50,13 +49,8 @@ export const Skills: {
 
   BackEnd: [
     {
-      name: "Java",
-      icon: FaJava,
-    },
-
-    {
-      name: "Spring Boot",
-      icon: SiSpring,
+      name: "Javascript",
+      icon: SiJavascript,
     },
     {
       name: 'Node',
@@ -65,10 +59,6 @@ export const Skills: {
   ],
 
   database: [
-    {
-      name: 'Mongodb',
-      icon: SiMongodb,
-    },
     {
       name: 'MySQL',
       icon: SiMysql,
@@ -94,6 +84,19 @@ export const Skills: {
     {
       name: "Linux",
       icon: FaLinux,
+    },
+    {
+      name: "Java",
+      icon: FaJava,
+    },
+
+    {
+      name: "Spring Boot",
+      icon: SiSpring,
+    },
+    {
+      name: 'Mongodb',
+      icon: SiMongodb,
     },
   ],
   cloud: [
