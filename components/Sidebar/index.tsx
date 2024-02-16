@@ -83,7 +83,7 @@ const Sidebar = () => {
             whileTap={{ scale: 0.9 }}
             color="#45aaf2"
           >
-            Pelanda.
+            De Alencar Pelanda.
           </MotionHeading>
 
           <MotionText
@@ -92,7 +92,7 @@ const Sidebar = () => {
             className={styles.marginTopForce}
             variants={fadeInUp}
           >
-            Ou você pode me chamar de Leo.
+            Ou você pode me chamar de Leonardo.
           </MotionText>
 
           <MotionHeading
@@ -103,7 +103,7 @@ const Sidebar = () => {
             variants={fadeInUp}
             color="#45aaf2"
           >
-            Apaixonado por Sistema de informação.
+            Apaixonado por cibersegurança.
           </MotionHeading>
 
           <MotionText
@@ -118,7 +118,7 @@ const Sidebar = () => {
               {' '}
               Obrigado!
             </Text>
-            <br />Estou em buscar de novas áreas na TI!
+            <br />Estou em buscar de uma oportunidade em cibersegurança!
           </MotionText>
           <MotionButton
             size="lg"

@@ -20,7 +20,7 @@ import {
 } from '@chakra-ui/react'
 import { BiRightArrow } from 'react-icons/bi'
 import styles from './styles.module.css'
-import { ExperiencesList } from '@/config/experience'
+import { ExperiencesList } from '@/config/Experiences'
 import { mobileBreakpointsMap } from '@/config/theme'
 
 const ExperienceTab = () => {

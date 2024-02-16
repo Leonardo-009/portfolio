@@ -13,6 +13,7 @@ import {
   SimpleGrid,
   useColorModeValue,
   Divider,
+  Spinner, // Import Spinner from Chakra UI
 } from '@chakra-ui/react'
 import styles from './styles.module.css'
 import { Skill, Skills, splitSkills } from '@/config/skills'
@@ -30,7 +31,7 @@ const SkillList = ({
   columns: Skill[][]
 }) => {
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
-  const [colOne, colTwo = []] = columns
+  const [colOne, colTwo = []] = columns;
   return (
     <>
       <Heading as="div" size="sm" paddingBottom={1} variant="description">
@@ -66,14 +67,18 @@ const SkillList = ({
         </List>
       </SimpleGrid>
     </>
-  )
-}
+  );
+};
+
 const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
-  const FrontEnd = splitSkills(Skills.FrontEnd)
-  const cloud = splitSkills(Skills.cloud)
-  const BackEnd = splitSkills(Skills.BackEnd)
-  const dataBaseCols = splitSkills(Skills.database)
-  const Conhecimento  = splitSkills(Skills.Conhecimento )
+  const Reconhecimento = splitSkills(Skills.Reconhecimento);
+  const ModelagemDeAmeaças = splitSkills(Skills.ModelagemDeAmeaças);
+  const AnáliseDeVulnerabilidade = splitSkills(Skills.AnáliseDeVulnerabilidade);
+  const Exploração = splitSkills(Skills.Exploração);
+  const PósExploração = splitSkills(Skills.Pós_Exploração);
+  const SAST = splitSkills(Skills.SAST);
+  const DAST = splitSkills(Skills.DAST);
+
   return (
     <Modal
       isOpen={isOpen}
@@ -83,18 +88,28 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
     >
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Conjunto De Habilidades</ModalHeader>
+        <ModalHeader>Skill</ModalHeader>
         <ModalCloseButton />
-        <ModalBody className={styles.skillModal} >
-          <SkillList title="Front End" columns={FrontEnd} />
-          <SkillList title="Back End" columns={BackEnd} />
-          <SkillList title="Banco de dados" columns={dataBaseCols} />
-          <SkillList title="cloud" columns={cloud} />
-          <SkillList title="Conhecimento " columns={Conhecimento } />
+        <ModalBody className={styles.skillModal}>
+          <SkillList title="Reconhecimento em evolução...⚙️" columns={Reconhecimento} />
+          <SkillList title="Modelagem de ameaças em evolução...⚙️" columns={ModelagemDeAmeaças} />
+          <SkillList title="Análise de Vulnerabilidade em evolução...⚙️" columns={AnáliseDeVulnerabilidade} />
+          <SkillList title="Exploração em evolução...⚙️" columns={Exploração} />
+          <SkillList title="Pós-exploração em evolução...⚙️" columns={PósExploração} />
+          <SkillList title="Static Application Security Testing (SAST) em evolução...⚙️" columns={SAST} />
+          <SkillList title="Dynamic Application Security Testing (DAST) em evolução...⚙️" columns={DAST} />
+          <Spinner
+            thickness="4px"
+            speed="0.65s"
+            emptyColor="gray.200"
+            color="teal.500"
+            size="xl"
+            label="Loading..."
+          />
         </ModalBody>
       </ModalContent>
     </Modal>
-  )
-}
+  );
+};
 
-export default SkillSetModal
+export default SkillSetModal;

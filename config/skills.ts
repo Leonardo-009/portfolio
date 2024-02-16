@@ -1,27 +1,13 @@
 import { IconType } from 'react-icons';
-import {
-  SiReact,
-  SiDocker,
-  SiMysql,
-  SiGit,
-  SiVisualstudiocode,
-  SiAmazonaws,
-  SiAwslambda,
-  SiAmazonec2,
-  SiMongodb,
-  SiJavascript,
-  SiSpring,
-} from 'react-icons/si';
-import { AiFillGithub } from 'react-icons/ai';
-import { FaAngular, FaLinux, FaNode, FaJava} from 'react-icons/fa';
-
 
 export type SkillCategory =
-  | 'FrontEnd'
-  | 'database'
-  | 'BackEnd'
-  | 'cloud'
-  | 'Conhecimento';
+  | 'Reconhecimento'
+  | 'ModelagemDeAmeaças'
+  | 'AnáliseDeVulnerabilidade'
+  | 'Exploração'
+  | 'Pós_Exploração'
+  | 'SAST'
+  | 'DAST';
 
 
 export type Skill = {
@@ -32,87 +18,112 @@ export type Skill = {
 export const Skills: {
   [key in SkillCategory]: Skill[];
 } = {
-  FrontEnd: [
+  Reconhecimento: [
     {
-      name: 'Angular',
-      icon: FaAngular,
+      name: 'Nmap'
     },
     {
-      name: 'React',
-      icon: SiReact,
+      name: 'Shodan'
     },
     {
-      name: "Javascript",
-      icon: SiJavascript,
-    },
-  ],
-
-  BackEnd: [
-    {
-      name: "Javascript",
-      icon: SiJavascript,
+      name: "Google Dorks"
     },
     {
-      name: 'Node',
-      icon: FaNode,
+      name: 'Wireshark'
+    },
+    {
+      name: 'Burp Suite'
+    },
+    {
+      name: 'OWASP_ZAP',
     },
   ],
 
-  database: [
+  ModelagemDeAmeaças: [
     {
-      name: 'MySQL',
-      icon: SiMysql,
+      name: 'Threat Modeling'
+    },
+    {
+      name: 'DREAD Score'
+    },
+    {
+      name: "Attack Tree"
+    },
+    {
+      name: 'STRIDE Model'
     },
   ],
-  Conhecimento: [
-    {
-      name: 'Visual Studio Code',
-      icon: SiVisualstudiocode,
-    },
-    {
-      name: 'Git',
-      icon: SiGit,
-    },
-    {
-      name: 'Github',
-      icon: AiFillGithub,
-    },
-    {
-      name: 'Docker',
-      icon: SiDocker,
-    },
-    {
-      name: "Linux",
-      icon: FaLinux,
-    },
-    {
-      name: "Java",
-      icon: FaJava,
-    },
 
+  AnáliseDeVulnerabilidade: [
     {
-      name: "Spring Boot",
-      icon: SiSpring,
+      name: 'OpenSCAP'
     },
     {
-      name: 'Mongodb',
-      icon: SiMongodb,
-    },
-  ],
-  cloud: [
-    {
-      name: 'Amazon AWS',
-      icon: SiAmazonaws,
-    },
-    {
-      name: 'Lambda',
-      icon: SiAwslambda,
-    },
-    {
-      name: 'EC2',
-      icon: SiAmazonec2,
+      name: 'Wfuzz'
     },
   ],
+  Exploração: [
+    {
+      name: 'Metasploit Framework-'
+    },
+    {
+      name: 'ExploitDB'
+    },
+    {
+      name: "SQLMap"
+    },
+    {
+      name: 'Hydra'
+    },
+    {
+      name: 'ZAP'
+    },
+    {
+      name: 'Burp Suite'
+    },
+    {
+      name: 'CrackMapExec'
+    },
+    {
+      name: 'Sqlninja'
+    },
+    {
+      name: 'PowerSploit'
+    },
+  ],
+  Pós_Exploração: [
+    {
+      name: 'Meterpreter'
+    },
+    {
+      name: 'PowerShell Empire'
+    },
+    {
+      name: 'Metasploit Framework'
+    },
+    {
+      name: 'CrackMapExec'
+    },
+  ],
+  SAST: [
+    {
+      name: 'SonarQube',
+    },
+    {
+      name: 'Veracode',
+    },
+    {
+      name: 'Fortify',
+    },
+  ],
+  DAST: [
+    {
+      name: 'AppScan',
+    },
+    {
+      name: 'OWASP ZAP',
+    }
+  ]
 };
 
 export const splitSkills = (srcArray: Skill[]) => {

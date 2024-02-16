@@ -1,12 +1,12 @@
 # Site pessoal de Leonardo Pelanda
 
-# Meu Portfólio - V2
+# Meu Portfólio - V3
 
 > Este é o repositório da segunda versão do meu site de portfólio.
 
 ## Visão Geral
 
-Esta é a V2 do meu site de portfólio, uma reescrita completa da V1 que estava desatualizada. Eu decidi atualizá-lo com novas tecnologias e experimentar o que eu seria capaz de fazer sozinho.
+Esta é a V3 do meu site de portfólio, uma reescrita completa da V1 que estava desatualizada. Eu decidi atualizá-lo com novas tecnologias e experimentar o que eu seria capaz de fazer sozinho.
 
 O site foi escrito em Typescript usando Next.js como uma ferramenta SSG (Static Site Generator). Utilizei o ChakraUI para agilizar a criação do estilo e o Framer Motion para as animações.
 
